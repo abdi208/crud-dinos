@@ -9,8 +9,10 @@ app.use(ejsLayouts);
 app.use(express.static('static'));
 
 app.get('/', function(req, res) {
-    res.send('Youve hit the route route')
+    res.send('Youve hit the root route')
 })
+
+app.use('/dinosaurs', require('./routes/dinosaurs'))
 
 app.listen(3000, function(){
     console.log('server is running')
