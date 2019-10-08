@@ -9,7 +9,7 @@ app.use(ejsLayouts);
 app.use(express.static('static'));
 
 app.get('/', function(req, res) {
-    res.send('Youve hit the root route')
+    res.render('Home');
 })
 
 app.use('/dinosaurs', require('./routes/dinosaurs'))
