@@ -1,0 +1,16 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1 {
+    background-color:chartreuse;
+}
+footer {
+    background-color: darkslategray;
+    color: whitesmoke;
+}
+ul {
+    width: 15%;
+    margin: 0 auto;
+}
