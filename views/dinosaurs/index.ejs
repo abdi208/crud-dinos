@@ -1,5 +1,9 @@
 <ul>
     <% dinos.forEach(function(dino, id) { %>
-        <li> <a href="/dinosaurs/<%= id %>"><%= dino.name %></a> is a <%= dino.type %> </li>
+        <li> <a href="/dinosaurs/<%= id %>"><%= dino.name %></a> is a <%= dino.type %> 
+        <form method="POST" action ="/dinosaurs/<%= id %>/?_method=DELETE">
+            <input type="submit" value="X">
+            </form>
+        </li>
     <% }) %>
 </ul>

@@ -1,0 +1,5 @@
+<ul>
+    <% cryptids.forEach(function(cryptid, id) {%>
+        <li> <a href="/cryptids/<%= id %>"><%= cryptid.name%></a> </li>
+    <%})%>
+</ul>
