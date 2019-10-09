@@ -1,6 +1,10 @@
-<form method = "POST" action="/cryptids/<%= crypsIndex %>/?_method=PUT">
+
+<form method = "Post" action="/cryptids/<%= crypsIndex %>/?_method=PUT">
     <label for="name">Name</label>
-    <input type="text" name="name" id="name">
+    <input type="text" name="name" id="name" value="cryptid.name">
+    
+    <label for="img">Img</label>
+    <input type="img_url" name="img" id="img" value="cryptid.img_url">
 
     <input type="submit" value="Edit">
 
